@@ -1,0 +1,16 @@
+version: "3"
+services:
+    node-frontend-app:
+        build:
+            context: .
+            dockerfile: ./docker/node/Dockerfile
+        container_name: node_frontend_app
+        tty: true
+        working_dir: /frontend
+        volumes:
+            - ./frontend:/frontend
+        # 必要なパッケージのインストール・reactプロジェクトとfunctionsのビルド・firebaseのエミュレータの起動
+        # command: bash -c 'sh refresh.sh'
+        ports:
+            # yarn startで起動させたい場合
+            - "3000:3000"
