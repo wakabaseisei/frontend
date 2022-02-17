@@ -5,4 +5,4 @@ UserのCRUD操作ができるサービスのフロントエンド
 
 ## 使用技術
 * 言語 Typescript
-* 主なライブラリ React, Axios, React Router
+* 主なライブラリ React, Axios, React Router, Material-UI
